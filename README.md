@@ -1,5 +1,5 @@
 #Video APP by Kartik
-<div style: width:108px;height:190px ; justify-content:center;>![image](https://github.com/kartiksaxena532/VideoApp/assets/92146206/1aad0306-954b-4645-93b3-f5d86069060d)</div>
+<img src="https://github.com/kartiksaxena532/VideoApp/assets/92146206/1aad0306-954b-4645-93b3-f5d86069060d" style: width:108px;height:190px ; justify-content:center;/>
 
 ## Features
 1. Google Sign In
