@@ -1,7 +1,8 @@
+import 'package:flutter/foundation.dart';
 import 'package:jitsi_meet/feature_flag/feature_flag.dart';
 import 'package:jitsi_meet/jitsi_meet.dart';
-import 'package:zoom_clone_tutorial/resources/auth_methods.dart';
-import 'package:zoom_clone_tutorial/resources/firestore_methods.dart';
+import '../resources/auth_methods.dart';
+import '../resources/firestore_methods.dart';
 
 class JitsiMeetMethods {
   final AuthMethods _authMethods = AuthMethods();
@@ -34,7 +35,9 @@ class JitsiMeetMethods {
       _firestoreMethods.addToMeetingHistory(roomName);
       await JitsiMeet.joinMeeting(options);
     } catch (error) {
-      print("error: $error");
+      if (kDebugMode) {
+        print("error: $error");
+      }
     }
   }
 }

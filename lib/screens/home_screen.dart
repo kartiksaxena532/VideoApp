@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:zoom_clone_tutorial/resources/auth_methods.dart';
-import 'package:zoom_clone_tutorial/screens/history_meeting_screen.dart';
-import 'package:zoom_clone_tutorial/screens/meeting_screen.dart';
-import 'package:zoom_clone_tutorial/utils/colors.dart';
-import 'package:zoom_clone_tutorial/widgets/custom_button.dart';
+import '../resources/auth_methods.dart';
+import '../screens/history_meeting_screen.dart';
+import '../screens/meeting_screen.dart';
+import '../utils/colors.dart';
+import '../widgets/my_button.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
