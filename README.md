@@ -1,4 +1,5 @@
-# my_app
+#Video APP by Kartik
+<img src="https://github.com/kartiksaxena532/VideoApp/assets/92146206/1aad0306-954b-4645-93b3-f5d86069060d" style=" width:108 px;height:190 px ; justify-content:center;"/>
 
 A new Flutter project.
 
