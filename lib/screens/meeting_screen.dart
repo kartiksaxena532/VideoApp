@@ -1,11 +1,11 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:zoom_clone_tutorial/resources/jitsi_meet_methods.dart';
-import 'package:zoom_clone_tutorial/widgets/home_meeting_button.dart';
+import '../resources/jitsi_meet_methods.dart';
+import '../widgets/home_meeting_button.dart';
 
 class MeetingScreen extends StatelessWidget {
-  MeetingScreen({Key? key}) : super(key: key);
+  MeetingScreen({super.key});
 
   final JitsiMeetMethods _jitsiMeetMethods = JitsiMeetMethods();
 

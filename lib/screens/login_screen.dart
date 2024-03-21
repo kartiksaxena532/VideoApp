@@ -1,45 +1,51 @@
 import 'package:flutter/material.dart';
-import 'package:zoom_clone_tutorial/resources/auth_methods.dart';
-import 'package:zoom_clone_tutorial/widgets/custom_button.dart';
+
+import '../widgets/my_button.dart';
 
 class LoginScreen extends StatefulWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+  const LoginScreen({super.key});
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State <LoginScreen>createState() =>  LoginScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
-  final AuthMethods _authMethods = AuthMethods();
-
+class  LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
+    return  Scaffold(
+      body: Column (
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Text(
-            'Start or join a meeting',
-            style: const TextStyle(
-              fontSize: 24,
+           const Text(
+            "Hey Kartik!",
+           
+            style : TextStyle(
+              fontSize: 22,
+              fontWeight: FontWeight.w500,
+              color: Colors.white)
+          ),
+           const Text(
+            
+            "Wanna Join A Video Chat?",
+            style : TextStyle(
+              fontSize: 30,
               fontWeight: FontWeight.bold,
-            ),
+              color: Colors.white60)
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 38.0),
-            child: Image.asset('assets/images/onboarding.jpg'),
+            padding: const EdgeInsets.symmetric(vertical:42.0),
+          child: Image.asset("assets/images/Home1.png"),
           ),
-          CustomButton(
-            text: 'Google Sign In',
-            onPressed: () async {
-              bool res = await _authMethods.signInWithGoogle(context);
-              if (res) {
-                Navigator.pushNamed(context, '/home');
-              }
-            },
-          ),
+          
+          const CustomButton(text:"Sign In with Google",
+          onPressed:() { },),
         ],
-      ),
+
+      )
+
+
+
+
     );
   }
-}
+} 
